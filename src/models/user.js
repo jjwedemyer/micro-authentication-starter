@@ -1,4 +1,4 @@
-// get an instance of mongoose and mongoose.Schema
+/*// get an instance of mongoose and mongoose.Schema
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
@@ -8,3 +8,13 @@ module.exports = mongoose.model(
   new Schema({ username: String, password: String, token: String }),
   'User'
 );
+*/
+
+// this shall model a user account
+class User {
+	constructor(username,password,token){
+		this.username = username;
+		this.password = password;
+		this.token = token;
+	}
+}
