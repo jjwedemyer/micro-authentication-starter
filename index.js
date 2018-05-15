@@ -72,5 +72,8 @@ module.exports = router(
     
     send(res,201,{code});
   }),
-  get('/login',()=>{lol})
+  get('/login',()=>{lol}),
+  get('/token',),
+  post('/forgotpassword'),
+  post('/verificationmail')
   )
