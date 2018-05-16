@@ -17,4 +17,14 @@ class User {
 		this.password = password;
 		this.token = token;
 	}
+	function find() {
+		db.auth.findOne({
+			username: this.username
+		}).then(
+		result => {
+			return result;
+		}).catch(err => {
+			throw err;
+		});
+	}
 }
